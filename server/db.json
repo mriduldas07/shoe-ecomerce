@@ -1,0 +1,210 @@
+{
+  "shoes": [
+    {
+      "id": "1",
+      "brand": "Nike",
+      "model": "Air Max 90",
+      "type": "Sneakers",
+      "size": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "color": "White/Black",
+      "price": 120,
+      "inStock": true,
+      "ratings": 4.5,
+      "description": "The Nike Air Max 90 stays true to its OG roots with the iconic Waffle sole, stitched overlays, and classic TPU accents.",
+      "images": "https://img.freepik.com/free-photo/red-leather-shoes-stand-light-wooden-floor_8353-691.jpg?t=st=1716741946~exp=1716745546~hmac=5d2949f5f7cb511d61d527efca4753130fe0e1d935d0338c9ff1c8cd630e2d51&w=1380"
+    },
+    {
+      "id": "2",
+      "brand": "Adidas",
+      "model": "Ultraboost 21",
+      "type": "Running",
+      "size": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "color": "Black/White",
+      "price": 180,
+      "inStock": true,
+      "ratings": 4.8,
+      "description": "The Adidas Ultraboost 21 offers incredible energy return with its Boost midsole and Primeknit+ upper for a snug, supportive fit.",
+      "images": "https://img.freepik.com/free-photo/shoes_1203-8155.jpg?t=st=1716742032~exp=1716745632~hmac=44d3ed732cece979fa23fc7734efa0e59334e22faf4bb32284b4dc6dbb3af416&w=1380"
+    },
+    {
+      "id": "3",
+      "brand": "Puma",
+      "model": "RS-X3",
+      "type": "Casual",
+      "size": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "color": "Red/Black/White",
+      "price": 110,
+      "inStock": false,
+      "ratings": 4.2,
+      "description": "The Puma RS-X3 reinvents the classic RS design with a bold, modern twist and a vibrant color palette.",
+      "images": "https://img.freepik.com/free-photo/men-shoes_1203-8387.jpg?t=st=1716742068~exp=1716745668~hmac=42beb80230b641d022620432bdf130ccfec9e1bc5bf451f202662e9d8c610e90&w=1380"
+    },
+    {
+      "id": "4",
+      "brand": "Reebok",
+      "model": "Classic Leather",
+      "type": "Lifestyle",
+      "size": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "color": "White/Gum",
+      "price": 75,
+      "inStock": true,
+      "ratings": 4.3,
+      "description": "The Reebok Classic Leather features a timeless design with a supple leather upper and a cushioned EVA midsole for comfort.",
+      "images": "https://img.freepik.com/free-photo/pair-brown-shoes-with-black-leather-sole-word-bottom_123827-23446.jpg?t=st=1716742155~exp=1716745755~hmac=4bbfbb8618fccc1f1b8a7a14c6b90680f479b6fdd1c9cbee5e5f539947727402&w=1380"
+    },
+    {
+      "id": "5",
+      "brand": "New Balance",
+      "model": "574",
+      "type": "Sneakers",
+      "size": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "color": "Gray/White",
+      "price": 80,
+      "inStock": true,
+      "ratings": 4.6,
+      "description": "The New Balance 574 is an iconic sneaker with a retro running style, featuring a durable suede and mesh upper and ENCAP midsole technology.",
+      "images": "https://img.freepik.com/free-photo/sneakers-shoes_1203-8025.jpg?t=st=1716742244~exp=1716745844~hmac=032e418b55439a253cfa9a217b48da9b2816defff927edf6200762a0a8a8cf62&w=1380"
+    },
+    {
+      "id": "6",
+      "brand": "Asics",
+      "model": "Gel-Kayano 27",
+      "type": "Running",
+      "size": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "color": "Blue/Black",
+      "price": 160,
+      "inStock": true,
+      "ratings": 4.7,
+      "description": "The Asics Gel-Kayano 27 provides excellent stability and comfort, featuring GEL technology cushioning and a flexible upper design.",
+      "images": "https://img.freepik.com/free-photo/brown-leather-shoes_1203-8174.jpg?t=st=1716742275~exp=1716745875~hmac=1b01540d9dd90da58d0fee77b903264431ffe4d278c8a48444bd80b278a2300b&w=1380"
+    },
+    {
+      "id": "7",
+      "brand": "Under Armour",
+      "model": "Curry 8",
+      "type": "Basketball",
+      "size": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "color": "White/Gold",
+      "price": 150,
+      "inStock": true,
+      "ratings": 4.9,
+      "description": "The Under Armour Curry 8 offers unparalleled traction and support on the court with a lightweight design and responsive cushioning.",
+      "images": "https://img.freepik.com/premium-photo/gray-sneakers-with-red-laces-white-background_39665-9.jpg?w=1380"
+    },
+    {
+      "id": "8",
+      "brand": "Vans",
+      "model": "Old Skool",
+      "type": "Skateboarding",
+      "size": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "color": "Black/White",
+      "price": 60,
+      "inStock": true,
+      "ratings": 4.4,
+      "description": "The Vans Old Skool is a classic skate shoe featuring a durable canvas and suede upper, reinforced toe caps, and the iconic side stripe.",
+      "images": "https://img.freepik.com/free-photo/men-shoes_1203-8388.jpg?t=st=1716742321~exp=1716745921~hmac=2ddec0b1457ca58c67b67e775cceb427fab2c521f36cebe796e2c35192b4c397&w=1380"
+    },
+    {
+      "id": "9",
+      "brand": "Converse",
+      "model": "Chuck Taylor All Star",
+      "type": "Casual",
+      "size": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "color": "White/Black",
+      "price": 55,
+      "inStock": true,
+      "ratings": 4.5,
+      "description": "The Converse Chuck Taylor All Star is an iconic casual shoe with a high-top silhouette, durable canvas upper, and classic rubber toe cap.",
+      "images": "https://img.freepik.com/premium-photo/fashion-male-sport-shoes-blue-background-stylish-man-sneakers-fitness-close-up_77190-1693.jpg?w=1380"
+    },
+    {
+      "id": "10",
+      "brand": "Jordan",
+      "model": "Air Jordan 1",
+      "type": "Basketball",
+      "size": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "color": "Red/Black/White",
+      "price": 170,
+      "inStock": true,
+      "ratings": 4.9,
+      "description": "The Air Jordan 1 is a legendary basketball shoe featuring premium leather, a padded collar for support, and the iconic Air cushioning.",
+      "images": "https://img.freepik.com/premium-photo/running-shoes-white-background_10541-635.jpg?w=1380"
+    }
+  ]
+}
