@@ -29,10 +29,10 @@ const SingleProductCardDashboard = ({ shoe, onDelete }) => {
         <p>{description}</p>
         <div className="card-actions justify-end">
           <button className="btn bg-indigo-500 text-white">
-            <Link to={`/products/${id}`}>See details</Link>
+            <Link to={`/shoe/${id}`}>See details</Link>
           </button>
           <button className="btn bg-green-600 text-white">
-            <Link to={`edit/${id}`}>Edit</Link>
+            <Link to={`/edit/${id}`}>Edit</Link>
           </button>
           <button onClick={handleDelete} className="btn bg-red-500 text-white">
             Delete
