@@ -1,6 +1,9 @@
 import GoogleLogin from "../components/GoogleLogin";
 
 const Login = () => {
+  // const [email,setEmail] = useState("")
+  // const [password,setPassword] = useState("")
+
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row-reverse">

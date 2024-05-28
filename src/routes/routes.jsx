@@ -9,6 +9,7 @@ import ErrorPage from "../pages/ErrorPage";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import ProductDetails from "../pages/ProductDetails";
+import PrivateRoute from "./PrivateRoutes";
 
 export const router = createBrowserRouter([
   {
@@ -44,15 +45,27 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: <Dashboard />,
+        element: (
+          <PrivateRoute>
+            <Dashboard />
+          </PrivateRoute>
+        ),
       },
       {
         path: "all-products",
-        element: <AllProducts />,
+        element: (
+          <PrivateRoute>
+            <AllProducts />
+          </PrivateRoute>
+        ),
       },
       {
         path: "add-products",
-        element: <AddProducts />,
+        element: (
+          <PrivateRoute>
+            <AddProducts />
+          </PrivateRoute>
+        ),
       },
       // {
       //   path: "all-products/edit/:id",

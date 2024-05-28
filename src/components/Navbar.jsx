@@ -1,6 +1,11 @@
+import { useAuthState, useSignOut } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
+import { auth } from "../../firebase.config";
 
 const Navbar = () => {
+  const [user] = useAuthState(auth);
+  const [signOut] = useSignOut(auth);
+
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -31,9 +36,11 @@ const Navbar = () => {
             <li>
               <Link to={"/about"}>About</Link>
             </li>
-            <li>
-              <Link to={"/login"}>Login</Link>
-            </li>
+            {!user && (
+              <li>
+                <Link to={"/login"}>Login</Link>
+              </li>
+            )}
             <li>
               <Link to={"/dashboard"}>Dashboard</Link>
             </li>
@@ -51,17 +58,23 @@ const Navbar = () => {
           <li>
             <Link to={"/about"}>About</Link>
           </li>
-          <li>
-            <Link to={"/login"}>Login</Link>
-          </li>
+          {!user && (
+            <li>
+              <Link to={"/login"}>Login</Link>
+            </li>
+          )}
           <li>
             <Link to={"/dashboard"}>Dashboard</Link>
           </li>
         </ul>
       </div>
-      <div className="navbar-end">
-        <a className="btn">Button</a>
-      </div>
+      {user && (
+        <div className="navbar-end">
+          <a className="btn" onClick={() => signOut()}>
+            Log out
+          </a>
+        </div>
+      )}
     </div>
   );
 };
