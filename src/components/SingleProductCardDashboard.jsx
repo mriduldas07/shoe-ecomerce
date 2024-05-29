@@ -1,5 +1,8 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
+import { BsInfoSquare } from "react-icons/bs";
+import { FiEdit } from "react-icons/fi";
+import { RiDeleteBinLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types
@@ -27,15 +30,19 @@ const SingleProductCardDashboard = ({ shoe, onDelete }) => {
         <h3 className="text-xl font-semibold">{brand}</h3>
         <h3 className="text-xl font-semibold">$ {price}</h3>
         <p>{description}</p>
-        <div className="card-actions justify-end">
-          <button className="btn bg-indigo-500 text-white">
-            <Link to={`/shoe/${id}`}>See details</Link>
+        <div className="card-actions justify-center">
+          <button className="btn bg-info text-white">
+            <Link to={`/shoe/${id}`}>
+              <BsInfoSquare />
+            </Link>
           </button>
-          <button className="btn bg-green-600 text-white">
-            <Link to={`edit/${id}`}>Edit</Link>
+          <button className="btn bg-success text-white">
+            <Link to={`edit/${id}`}>
+              <FiEdit />
+            </Link>
           </button>
-          <button onClick={handleDelete} className="btn bg-red-500 text-white">
-            Delete
+          <button onClick={handleDelete} className="btn bg-error text-white">
+            <RiDeleteBinLine />
           </button>
         </div>
       </div>

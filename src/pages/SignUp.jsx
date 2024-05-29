@@ -1,18 +1,19 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useState } from "react";
-import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { auth } from "../../firebase.config";
 import GoogleLogin from "../components/GoogleLogin";
 import Loading from "../components/Loading";
 
-const Login = () => {
+export default function SignUp() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
 
-  const [signInWithEmailAndPassword, user, loading] =
-    useSignInWithEmailAndPassword(auth);
+  const [createUserWithEmailAndPassword, user, loading] =
+    useCreateUserWithEmailAndPassword(auth);
 
   const navigate = useNavigate();
 
@@ -20,10 +21,9 @@ const Login = () => {
     return <Loading />;
   }
   if (user) {
-    navigate("/dashboard");
+    navigate("/login");
     toast("Sign up completed,please login now!!!");
   }
-
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row-reverse">
@@ -57,25 +57,37 @@ const Login = () => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
-              <label className="label">
-                <a href="#" className="label-text-alt link link-hover">
-                  Forgot password?
-                </a>
-              </label>
             </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Confirm Password</span>
+              </label>
+              <input
+                type="password"
+                placeholder="Confirm password"
+                className="input input-bordered"
+                required
+                value={confirmPassword}
+                onChange={(e) => setConfirmPassword(e.target.value)}
+              />
+            </div>
+            <p className="text-red-700">
+              {!(password === confirmPassword) &&
+                "Password should be matched with confirm password"}
+            </p>
             <div className="form-control mt-6">
               <button
                 className="btn btn-primary"
-                onClick={() => signInWithEmailAndPassword(email, password)}
+                onClick={() => createUserWithEmailAndPassword(email, password)}
               >
-                Login
+                Sign Up
               </button>
             </div>
             <div className="text-center text-lg text-gray-500">
               <p>
-                Don't have an account?
+                Already have an account?
                 <span className="text-blue-500 font-semibold">
-                  <Link to={`/sign-up`}> Sign Up</Link>
+                  <Link to={`/login`}> Login</Link>
                 </span>
               </p>
             </div>
@@ -88,6 +100,4 @@ const Login = () => {
       </div>
     </div>
   );
-};
-
-export default Login;
+}
