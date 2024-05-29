@@ -4,6 +4,7 @@ import { auth } from "../../firebase.config";
 
 export default function GoogleLogin() {
   const [signInWithGoogle] = useSignInWithGoogle(auth);
+
   return (
     <button className="btn w-full">
       <div
