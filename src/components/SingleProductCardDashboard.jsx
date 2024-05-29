@@ -32,7 +32,7 @@ const SingleProductCardDashboard = ({ shoe, onDelete }) => {
             <Link to={`/shoe/${id}`}>See details</Link>
           </button>
           <button className="btn bg-green-600 text-white">
-            <Link to={`/edit/${id}`}>Edit</Link>
+            <Link to={`edit/${id}`}>Edit</Link>
           </button>
           <button onClick={handleDelete} className="btn bg-red-500 text-white">
             Delete
