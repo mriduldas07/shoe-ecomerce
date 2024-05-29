@@ -206,6 +206,28 @@
       "ratings": 4.9,
       "description": "The Air Jordan 1 is a legendary basketball shoe featuring premium leather, a padded collar for support, and the iconic Air cushioning.",
       "images": "https://img.freepik.com/premium-photo/running-shoes-white-background_10541-635.jpg?w=1380"
+    },
+    {
+      "id": "8056",
+      "model": "bay",
+      "brand": "bata",
+      "price": "4543",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "images": "https://img.freepik.com/free-photo/sports-shoe-pair-design-illustration-generated-by-ai_188544-19642.jpg?t=st=1716970975~exp=1716974575~hmac=ed606765da6f0f53225df2f4cfe50e387a5962e3af22f8670835f8fd5954d717&w=1380",
+      "size": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "14"
+      ],
+      "rating": "4.5",
+      "type": "snecker",
+      "color": "red",
+      "inStock": true,
+      "ratings": "4.5"
     }
   ]
 }

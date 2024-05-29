@@ -30,20 +30,22 @@ const AddProducts = () => {
       color,
       inStock,
     };
-
-    await fetch("http://localhost:8000/shoes", {
-      method: "POST",
-      headers: {
-        "Content-type": "application/json",
-      },
-      body: JSON.stringify(data),
-    })
-      .then((res) => res.json())
-      // eslint-disable-next-line no-unused-vars
-      .then((data) => {
-        toast("Product added successfully");
-        form.reset();
-      });
+    const confirmed = confirm("Are you want to add a product???");
+    if (confirmed) {
+      await fetch("http://localhost:8000/shoes", {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify(data),
+      })
+        .then((res) => res.json())
+        // eslint-disable-next-line no-unused-vars
+        .then((data) => {
+          toast("Product added successfully");
+          form.reset();
+        });
+    }
   };
 
   return (

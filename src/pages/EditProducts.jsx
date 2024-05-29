@@ -51,20 +51,24 @@ const EditProducts = () => {
       inStock,
     };
 
-    await fetch(`http://localhost:8000/shoes/${id}`, {
-      method: "PATCH",
-      headers: {
-        "Content-type": "application/json",
-      },
-      body: JSON.stringify(data),
-    })
-      .then((res) => res.json())
-      // eslint-disable-next-line no-unused-vars
-      .then((data) => {
-        toast("Product edited successfully");
-        navigate("/dashboard/all-products");
-        form.reset();
-      });
+    const confirmed = confirm("Are you want to update this product???");
+
+    if (confirmed) {
+      await fetch(`http://localhost:8000/shoes/${id}`, {
+        method: "PATCH",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify(data),
+      })
+        .then((res) => res.json())
+        // eslint-disable-next-line no-unused-vars
+        .then((data) => {
+          toast("Product edited successfully");
+          navigate("/dashboard/all-products");
+          form.reset();
+        });
+    }
   };
 
   return (
