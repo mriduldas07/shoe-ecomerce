@@ -3,7 +3,6 @@ import { auth } from "../../firebase.config";
 
 const Dashboard = () => {
   const [user] = useAuthState(auth);
-  console.log(user);
   return (
     <div className="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
       <div className="bg-gradient-to-r from-blue-500 to-indigo-500 h-20"></div>
